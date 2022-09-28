@@ -1,0 +1,9 @@
+dist
+build
+coverage
+src/ui/assets/*
+.jest
+yarn.lock
+.gitattributes
+.gitignore
+.eslintignore
