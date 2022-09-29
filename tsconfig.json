@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "/",
     "target": "ES2016",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "esModuleInterop": true,
@@ -23,8 +23,8 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "skipLibCheck": true,
-    "incremental": true
+    "incremental": true,
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", ".jest/setup.ts"],
-  "exclude": ["node_modules", "dist", "src/**/*.spec*", "src/**/*.test*"]
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", ".jest/setup.ts"],
+  "exclude": ["node_modules", "dist", "./src/**/*.spec*", "./src/**/*.test*"]
 }

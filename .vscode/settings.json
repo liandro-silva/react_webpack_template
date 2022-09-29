@@ -1,5 +1,9 @@
 {
   "editor.rulers": [80],
   "[git-commit]": { "editor.rulers": [50] },
-  "[markdown]": { "editor.rulers": [80] }
+  "[markdown]": { "editor.rulers": [80] },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
 }
