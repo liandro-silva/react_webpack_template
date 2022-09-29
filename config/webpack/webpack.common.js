@@ -95,7 +95,20 @@ module.exports = env => ({
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      minify: isProduction,
+      minify: isProduction
+        ? {
+            removeComments: true,
+            collapseWhitespace: true,
+            removeRedundantAttributes: true,
+            useShortDoctype: true,
+            removeEmptyAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+            keepClosingSlash: true,
+            minifyJS: true,
+            minifyCSS: true,
+            minifyURLs: true
+          }
+        : undefined,
       cache: true
     }),
     ...(isDevelopment ? [new ReactRefreshWebpackPlugin()] : [])
