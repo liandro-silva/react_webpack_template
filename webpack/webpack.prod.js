@@ -1,6 +1,6 @@
 /* eslint @typescript-eslint/no-var-requires: "off" */
 require('dotenv').config();
-const common = require('./common');
+const common = require('./webpack.common');
 
 module.exports = common({
   mode: 'production',
